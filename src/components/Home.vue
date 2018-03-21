@@ -1,12 +1,44 @@
 <template>
   <div class="home">
-    Home
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">{{ heading }}</h1>
+          <div class="is-two-thirds column is-paddingless">
+            <h2 class="subtitle is-4">{{ subheading }}</h2>
+          </div>
+          <a class="button is-large is-primary" id="learn">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns pd is-desktop">
+          <div class="column is-1 has-text-centered">
+            <i class="fa fa-cog is-primary"></i>
+          </div>
+          <div class="column is-one-third-desktop">
+            <p class="title"><strong>We provide superior logistics so that your business can succeed in a crazy world.</strong></p>
+          </div>
+          <div class="column">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
 export default {
   name: 'home',
+  data () {
+    return {
+      heading: "Soaring to new heights",
+      subheading: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+  }
 }  
 </script>
 
@@ -14,5 +46,19 @@ export default {
 <style lang="sass" scoped>
 @import '../mq'
 
+.hero 
+  background: url("../assets/clouds3.jpg")
+  background-size: cover
 
+  .title
+    +mobile
+      font-weight: bold
+    +tablet 
+      font-size: 2.5rem
+    +desktop
+      font-size: 4rem
+      margin-top: 2rem
+
+h2
+  margin: 1.5rem 0 2rem 0 !important 
 </style>
