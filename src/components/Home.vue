@@ -26,6 +26,34 @@
           </div>
         </div>
       </div>
+
+      <div class="columns pd">
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <p class="title">"I think it's an absolutely excellent tool for our business. I can't survive without this thing."</p>
+              <p class="subtitle">Gary Simon</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <p class="title">"I think it's an absolutely excellent tool for our business. I can't survive without this thing."</p>
+              <p class="subtitle">Gary Simon</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <p class="title">"I think it's an absolutely excellent tool for our business. I can't survive without this thing."</p>
+              <p class="subtitle">Gary Simon</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
   </div>
 </template>
@@ -61,4 +89,16 @@ export default {
 
 h2
   margin: 1.5rem 0 2rem 0 !important 
+
+.fa-cog 
+  font-size: 40px
+
+#learn 
+  +desktop
+    margin-bottom: 2rem
+
+.pd
+  +tablet
+    padding: 2em 0 
+
 </style>
